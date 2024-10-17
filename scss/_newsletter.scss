@@ -1,0 +1,48 @@
+.newsletter{
+    padding-top: 103px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #DDDDDD;
+    margin-top: 130px;
+    @include df();
+    &__title{
+        font-size: 36px;
+        line-height: 46px;
+        font-weight: 500;
+        color: #222222;
+    }
+    &__form{
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        input{
+            width: 386px;
+            height: 56px;
+            padding-left: 16px;
+            background: #FFFFFF;
+            outline: none;
+            border: none;
+        }
+        button{
+            padding: 10px 20px;
+            background: $bg-py;
+            border: none;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 500;
+            outline: none;
+            border: 8px solid #fff;
+        }
+    }
+}
+
+@media (max-width: 1170px) {
+    .newsletter{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        
+    }
+    
+}
