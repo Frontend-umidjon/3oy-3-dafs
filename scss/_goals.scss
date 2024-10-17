@@ -1,0 +1,50 @@
+.goals{
+    margin-top: 130px;
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 300px;
+        padding: 58px 0;
+
+    }
+    &__item{
+        text-align: center;
+        h3{
+            font-size: 56px;
+            line-height: 70px;
+            font-weight: 700;
+            text-decoration: underline;
+            color: #222222;
+        }
+        p{
+            @include text();
+            font-size: 24px;
+            margin-top: 30px;
+        }
+    }
+}
+
+
+@media (max-width: 1090px) {
+    .goals__item{
+        h3{
+            font-size: 40px;
+            line-height: 50px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .goals__list{
+        gap: 150px;
+    }
+    
+}
+
+@media (max-width: 440px) {
+    .goals__list{
+        gap: 100px;
+    }
+}

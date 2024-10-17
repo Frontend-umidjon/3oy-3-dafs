@@ -1,0 +1,68 @@
+.about{
+    margin-top: 130px;
+    @include df();
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__title{
+        @include title();
+        max-width: 520px
+    }
+    &__text{
+        @include text();
+        max-width: 608px;
+    }
+    &__btn{
+        width: 148px;
+    height: 56px;
+    background: $bg-py;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    outline: none;
+    }
+    &__img{
+        max-width: 100%;
+    }
+}
+
+
+
+@media (max-width: 1020px) {
+    .about{
+        flex-direction: column;
+        gap: 50px;
+        &__content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    .about{
+        &__content{
+            gap: 16px;
+        }
+    }   
+    .about__btn{
+        width: 120px;
+        height: 40px;
+    }
+    .about__title{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .about__text{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

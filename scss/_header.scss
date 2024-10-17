@@ -1,0 +1,53 @@
+.header{
+    background: $bg-sy;
+    .navbar{
+        @include df();
+        padding: 40px 0 68px 0;
+        &__list{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            list-style: none;
+        }
+        &__link{
+            @include text(16px, 400, 20px);
+            text-decoration: none;
+            color: #222222;
+        }
+        &__action{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        &__btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            color: #222222;
+            &:hover{
+                opacity: 0.8;
+            }
+            &:active{
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header{
+        .navbar{
+            &__list{
+                display: none;
+            }
+        }
+    }
+}
+
+
+

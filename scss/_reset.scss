@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Red-hat-display';
+    src: url(../fonts/RedHatDisplay-VariableFont_wght.woff);
+}
+body{
+    font-family: 'Red-hat-display';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1272px;
+    margin: 0 auto;
+    padding: 0 16px;
+    width: 100%;
+}

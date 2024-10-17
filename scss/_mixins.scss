@@ -1,0 +1,16 @@
+@mixin df($display:flex, $justify:space-between, $align:center) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin title($fs:56px, $fw:500, $lh:70px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh; 
+}
+@mixin text($fs:20px, $fw:400, $lh:32px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: #555555;
+}

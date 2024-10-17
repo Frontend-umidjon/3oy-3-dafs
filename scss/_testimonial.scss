@@ -1,0 +1,12 @@
+.testimonial{
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    gap: 37px;
+    &__image{
+        max-width: 100%;
+        img{
+            max-width: 100%;
+        }
+    }
+}
